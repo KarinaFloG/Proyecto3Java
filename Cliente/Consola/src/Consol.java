@@ -22,10 +22,6 @@ import java.util.logging.Logger;
  * and open the template in the editor.++
  */
 
-/**
- *
- * @author hector
- */
 public class Consol extends javax.swing.JFrame {
 
     /**
@@ -106,20 +102,20 @@ public class Consol extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        textSpeed = new javax.swing.JTextField();
+        textRepeat = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
-        textSpeed = new javax.swing.JTextField();
-        btnPlay = new javax.swing.JButton();
         btnStop = new javax.swing.JButton();
-        textRepeat = new javax.swing.JTextField();
+        btnPlay = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setBackground(new java.awt.Color(102, 255, 0));
 
         btn1.setBackground(new java.awt.Color(102, 102, 102));
         btn1.addActionListener(new java.awt.event.ActionListener() {
@@ -345,10 +341,10 @@ public class Consol extends javax.swing.JFrame {
             }
         });
 
-        jPanel2.setBackground(new java.awt.Color(255, 102, 153));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 0));
         jPanel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-bass-drum-50.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon5.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -361,12 +357,12 @@ public class Consol extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel3.setBackground(new java.awt.Color(255, 102, 153));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 0));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-snare-drum-top-50.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon3.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -375,54 +371,20 @@ public class Consol extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addComponent(jLabel4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel4.setBackground(new java.awt.Color(255, 102, 153));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon4.png"))); // NOI18N
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-drum-set-50.png"))); // NOI18N
+        jPanel6.setBackground(new java.awt.Color(102, 255, 102));
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(36, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addGap(38, 38, 38))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-        );
-
-        jPanel5.setBackground(new java.awt.Color(255, 102, 153));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-cymbals-50.png"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
-        );
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-música-96.png"))); // NOI18N
-
-        jPanel6.setBackground(new java.awt.Color(51, 51, 51));
-
-        textSpeed.setText("velocidad");
+        textSpeed.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        textSpeed.setForeground(new java.awt.Color(51, 0, 51));
+        textSpeed.setText("INSERTE VELOCIDAD");
         textSpeed.setToolTipText("");
         textSpeed.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -430,25 +392,9 @@ public class Consol extends javax.swing.JFrame {
             }
         });
 
-        btnPlay.setBackground(new java.awt.Color(0, 153, 102));
-        btnPlay.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-reproducir-en-círculo-30.png"))); // NOI18N
-        btnPlay.setPreferredSize(new java.awt.Dimension(50, 50));
-        btnPlay.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPlayActionPerformed(evt);
-            }
-        });
-
-        btnStop.setBackground(new java.awt.Color(153, 0, 0));
-        btnStop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-detener-en-círculos-30.png"))); // NOI18N
-        btnStop.setPreferredSize(new java.awt.Dimension(50, 50));
-        btnStop.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnStopActionPerformed(evt);
-            }
-        });
-
-        textRepeat.setText("repeticiones");
+        textRepeat.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        textRepeat.setForeground(new java.awt.Color(51, 0, 51));
+        textRepeat.setText("INSERTE REPETICIONES");
         textRepeat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 textRepeatActionPerformed(evt);
@@ -460,30 +406,75 @@ public class Consol extends javax.swing.JFrame {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGap(154, 154, 154)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(textRepeat)
-                    .addComponent(textSpeed, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
-                .addComponent(btnPlay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(44, 44, 44)
-                .addComponent(btnStop, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(79, 79, 79))
+                    .addComponent(textSpeed, javax.swing.GroupLayout.DEFAULT_SIZE, 227, Short.MAX_VALUE))
+                .addGap(173, 173, 173))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnPlay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnStop, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 19, Short.MAX_VALUE))
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(35, 35, 35)
+                .addContainerGap(30, Short.MAX_VALUE)
                 .addComponent(textSpeed, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(textRepeat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(textRepeat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(24, 24, 24))
         );
+
+        jPanel4.setBackground(new java.awt.Color(255, 255, 0));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon2.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(50, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(38, 38, 38))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel5.setBackground(new java.awt.Color(255, 255, 0));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon1.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        btnStop.setBackground(new java.awt.Color(255, 0, 0));
+        btnStop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-detener-en-círculos-30.png"))); // NOI18N
+        btnStop.setPreferredSize(new java.awt.Dimension(50, 50));
+        btnStop.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStopActionPerformed(evt);
+            }
+        });
+
+        btnPlay.setBackground(new java.awt.Color(0, 0, 204));
+        btnPlay.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-reproducir-en-círculo-30.png"))); // NOI18N
+        btnPlay.setPreferredSize(new java.awt.Dimension(50, 50));
+        btnPlay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPlayActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -492,163 +483,176 @@ public class Consol extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(70, 70, 70)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(37, 37, 37)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btn8, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn10, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn11, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn12, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btn13, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn14, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn15, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn16, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btn17, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn18, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn19, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn20, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btn21, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn22, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn23, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn24, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(11, 11, 11)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btn25, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn26, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn27, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn28, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btn29, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn30, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn31, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn32, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btn13, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btn17, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn21, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn25, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn29, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(92, 92, 92)
+                                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(btn10, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(btn14, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(btn18, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn22, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn26, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn30, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(btn11, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(btn15, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(btn19, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn23, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn27, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn31, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(btn12, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(btn16, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(btn20, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn24, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn28, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn32, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(92, 92, 92)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(166, 166, 166)
-                        .addComponent(jLabel5)
-                        .addGap(50, 50, 50)
+                        .addGap(192, 192, 192)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(22, 22, 22)
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(97, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnPlay, javax.swing.GroupLayout.DEFAULT_SIZE, 71, Short.MAX_VALUE)
+                    .addComponent(btnStop, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(60, 60, 60))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn29, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn30, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn31, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn32, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn25, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn26, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn27, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn28, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn21, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn22, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn23, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn24, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn17, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn18, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn19, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn20, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn13, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn14, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn15, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn16, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn10, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn11, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btn12, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btn1, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(btn5, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(btn9, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(btn13, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(btn17, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(btn21, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(btn25, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(btn29, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btn1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(12, 12, 12)
-                                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btn7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btn3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btn4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btn8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(51, Short.MAX_VALUE))
+                            .addComponent(btn2, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                            .addComponent(btn10, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                            .addComponent(btn14, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                            .addComponent(btn18, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                            .addComponent(btn22, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                            .addComponent(btn26, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                            .addComponent(btn30, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                            .addComponent(btnStop, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(14, 14, 14)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(btn7, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                                        .addComponent(btn3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(btn11, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btn15, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btn19, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(btnPlay, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btn23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn31, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(11, 11, 11)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btn4, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(btn8, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(btn12, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(btn16, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(btn20, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(btn24, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(btn28, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(btn32, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(51, 51, 51))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -658,20 +662,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn32.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("4hi_hat.wav");
+            URL soundURL = Consol.class.getResource("dj4.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin4.set(7, true);
-            System.out.println("Seleccionado" + sc.lin4.toString());
+            System.out.println("CHECK" + sc.lin4.toString());
             clip4.open(audioStream);
         }catch(Exception e){
 
         }
         clip4.start();
         clip4.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin4.set(7,false);
-            System.out.println("No selec" + sc.lin4.toString());
+            System.out.println("NO CHECK" + sc.lin4.toString());
         }
     }//GEN-LAST:event_btn32ActionPerformed
 
@@ -679,20 +682,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn31.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("3bombo.wav");
+            URL soundURL = Consol.class.getResource("dj3.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin3.set(7, true);
-            System.out.println("Seleccionado" + sc.lin3.toString());
+            System.out.println("CHECK" + sc.lin3.toString());
             clip3.open(audioStream);
         }catch(Exception e){
 
         }
         clip3.start();
         clip3.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin3.set(7,false);
-            System.out.println("No selec" + sc.lin3.toString());
+            System.out.println("NO CHECK" + sc.lin3.toString());
         }
     }//GEN-LAST:event_btn31ActionPerformed
 
@@ -700,20 +702,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn30.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("2percusion.wav");
+            URL soundURL = Consol.class.getResource("dj2.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin2.set(7, true);
-            System.out.println("Seleccionado" + sc.lin2.toString());
+            System.out.println("CHECK" + sc.lin2.toString());
             clip2.open(audioStream);
         }catch(Exception e){
 
         }
         clip2.start();
         clip2.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin2.set(7,false);
-            System.out.println("No selec" + sc.lin2.toString());
+            System.out.println("NO CHECK" + sc.lin2.toString());
         }
     }//GEN-LAST:event_btn30ActionPerformed
 
@@ -721,20 +722,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn29.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("1tarola.wav");
+            URL soundURL = Consol.class.getResource("dj1.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin1.set(7, true);
-            System.out.println("Seleccionado" + sc.lin1.toString());
+            System.out.println("CHECK" + sc.lin1.toString());
             clip1.open(audioStream);
         }catch(Exception e){
 
         }
         clip1.start();
         clip1.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin1.set(7,false);
-            System.out.println("No selec" + sc.lin1.toString());
+            System.out.println("NO CHECK" + sc.lin1.toString());
         }
     }//GEN-LAST:event_btn29ActionPerformed
 
@@ -742,20 +742,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn28.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("4hi_hat.wav");
+            URL soundURL = Consol.class.getResource("dj4.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin4.set(6, true);
-            System.out.println("Seleccionado" + sc.lin4.toString());
+            System.out.println("CHECK" + sc.lin4.toString());
             clip4.open(audioStream); 
         }catch(Exception e){
 
         }
         clip4.start();
         clip4.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin4.set(6,false);
-            System.out.println("No selec" + sc.lin4.toString());
+            System.out.println("NO CHECK" + sc.lin4.toString());
         }
     }//GEN-LAST:event_btn28ActionPerformed
 
@@ -763,20 +762,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn27.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("3bombo.wav");
+            URL soundURL = Consol.class.getResource("dj3.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin3.set(6, true);
-            System.out.println("Seleccionado" + sc.lin3.toString());
+            System.out.println("CHECK" + sc.lin3.toString());
             clip3.open(audioStream);
         }catch(Exception e){
 
         }
         clip3.start();
         clip3.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin3.set(6,false);
-            System.out.println("No selec" + sc.lin3.toString());
+            System.out.println("NO CHECK" + sc.lin3.toString());
         }
     }//GEN-LAST:event_btn27ActionPerformed
 
@@ -784,20 +782,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn26.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("2percusion.wav");
+            URL soundURL = Consol.class.getResource("dj2.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin2.set(6, true);
-            System.out.println("Seleccionado" + sc.lin2.toString());
+            System.out.println("CHECK" + sc.lin2.toString());
             clip2.open(audioStream);
         }catch(Exception e){
 
         }
         clip2.start();
         clip2.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin2.set(6,false);
-            System.out.println("No selec" + sc.lin2.toString());
+            System.out.println("NO CHECK" + sc.lin2.toString());
         }
     }//GEN-LAST:event_btn26ActionPerformed
 
@@ -805,20 +802,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn25.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("1tarola.wav");
+            URL soundURL = Consol.class.getResource("dj1.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin1.set(6, true);
-            System.out.println("Seleccionado" + sc.lin1.toString());
+            System.out.println("CHECK" + sc.lin1.toString());
             clip1.open(audioStream);
         }catch(Exception e){
 
         }
         clip1.start();
         clip1.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin1.set(6,false);
-            System.out.println("No selec" + sc.lin1.toString());
+            System.out.println("NO CHECK" + sc.lin1.toString());
         }
     }//GEN-LAST:event_btn25ActionPerformed
 
@@ -826,20 +822,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn24.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("4hi_hat.wav");
+            URL soundURL = Consol.class.getResource("dj4.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin4.set(5, true);
-            System.out.println("Seleccionado" + sc.lin4.toString());
+            System.out.println("CHECK" + sc.lin4.toString());
             clip4.open(audioStream);
         }catch(Exception e){
-
+            
         }
         clip4.start();
         clip4.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin4.set(5,false);
-            System.out.println("No selec" + sc.lin4.toString());
+            System.out.println("NO CHECK" + sc.lin4.toString());
         }
     }//GEN-LAST:event_btn24ActionPerformed
 
@@ -847,20 +842,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn23.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("3bombo.wav");
+            URL soundURL = Consol.class.getResource("dj3.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin3.set(5, true);
-            System.out.println("Seleccionado" + sc.lin3.toString());
+            System.out.println("CHECK" + sc.lin3.toString());
             clip3.open(audioStream);
         }catch(Exception e){
 
         }
         clip3.start();
         clip3.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin3.set(5,false);
-            System.out.println("No selec" + sc.lin3.toString());
+            System.out.println("NO CHECK" + sc.lin3.toString());
         }
     }//GEN-LAST:event_btn23ActionPerformed
 
@@ -868,20 +862,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn22.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("2percusion.wav");
+            URL soundURL = Consol.class.getResource("dj2.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin2.set(5, true);
-            System.out.println("Seleccionado" + sc.lin2.toString());
+            System.out.println("CHECK" + sc.lin2.toString());
             clip2.open(audioStream);
         }catch(Exception e){
 
         }
         clip2.start();
         clip2.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin2.set(5,false);
-            System.out.println("No selec" + sc.lin2.toString());
+            System.out.println("NO CHECK" + sc.lin2.toString());
         }
     }//GEN-LAST:event_btn22ActionPerformed
 
@@ -889,20 +882,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn21.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("1tarola.wav");
+            URL soundURL = Consol.class.getResource("dj1.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin1.set(5, true);
-            System.out.println("Seleccionado" + sc.lin1.toString());
+            System.out.println("CHECK" + sc.lin1.toString());
             clip1.open(audioStream);
         }catch(Exception e){
 
         }
         clip1.start();
         clip1.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin1.set(5,false);
-            System.out.println("No selec" + sc.lin1.toString());
+            System.out.println("NO CHECK" + sc.lin1.toString());
         }
     }//GEN-LAST:event_btn21ActionPerformed
 
@@ -910,20 +902,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn20.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("4hi_hat.wav");
+            URL soundURL = Consol.class.getResource("dj4.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin4.set(4, true);
-            System.out.println("Seleccionado" + sc.lin4.toString());
+            System.out.println("CHECK" + sc.lin4.toString());
             clip4.open(audioStream);
         }catch(Exception e){
 
         }
         clip4.start();
         clip4.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin4.set(4,false);
-            System.out.println("No selec" + sc.lin4.toString());
+            System.out.println("NO CHECK" + sc.lin4.toString());
         }
     }//GEN-LAST:event_btn20ActionPerformed
 
@@ -931,20 +922,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn19.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("3bombo.wav");
+            URL soundURL = Consol.class.getResource("dj3.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin3.set(4, true);
-            System.out.println("Seleccionado" + sc.lin3.toString());
+            System.out.println("CHECK" + sc.lin3.toString());
             clip3.open(audioStream);
         }catch(Exception e){
 
         }
         clip3.start();
         clip3.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin3.set(4,false);
-            System.out.println("No selec" + sc.lin3.toString());
+            System.out.println("NO CHECK" + sc.lin3.toString());
         }
     }//GEN-LAST:event_btn19ActionPerformed
 
@@ -952,20 +942,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn18.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("2percusion.wav");
+            URL soundURL = Consol.class.getResource("dj2.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin2.set(4, true);
-            System.out.println("Seleccionado" + sc.lin2.toString());
+            System.out.println("CHECK" + sc.lin2.toString());
             clip2.open(audioStream);
         }catch(Exception e){
 
         }
         clip2.start();
         clip2.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin2.set(4,false);
-            System.out.println("No selec" + sc.lin2.toString());
+            System.out.println("NO CHECK" + sc.lin2.toString());
         }
     }//GEN-LAST:event_btn18ActionPerformed
 
@@ -973,20 +962,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn17.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("1tarola.wav");
+            URL soundURL = Consol.class.getResource("dj1.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin1.set(4, true);
-            System.out.println("Seleccionado" + sc.lin1.toString());
+            System.out.println("CHECK" + sc.lin1.toString());
             clip1.open(audioStream);
         }catch(Exception e){
 
         }
         clip1.start();
         clip1.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin1.set(4,false);
-            System.out.println("No selec" + sc.lin1.toString());
+            System.out.println("NO CHECK" + sc.lin1.toString());
         }
     }//GEN-LAST:event_btn17ActionPerformed
 
@@ -994,10 +982,10 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn16.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("4hi_hat.wav");
+            URL soundURL = Consol.class.getResource("dj4.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin4.set(3, true);
-            System.out.println("Seleccionado" + sc.lin4.toString());
+            System.out.println("CHECK" + sc.lin4.toString());
             clip4.open(audioStream);
         }catch(Exception e){
 
@@ -1007,7 +995,7 @@ public class Consol extends javax.swing.JFrame {
         //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin4.set(3,false);
-            System.out.println("No selec" + sc.lin4.toString());
+            System.out.println("NO CHECK" + sc.lin4.toString());
         }
     }//GEN-LAST:event_btn16ActionPerformed
 
@@ -1015,10 +1003,10 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn15.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("3bombo.wav");
+            URL soundURL = Consol.class.getResource("dj3.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin3.set(3, true);
-            System.out.println("Seleccionado" + sc.lin3.toString());
+            System.out.println("CHECK" + sc.lin3.toString());
             clip3.open(audioStream);
         }catch(Exception e){
 
@@ -1028,7 +1016,7 @@ public class Consol extends javax.swing.JFrame {
         //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin3.set(3,false);
-            System.out.println("No selec" + sc.lin3.toString());
+            System.out.println("NO CHECK" + sc.lin3.toString());
         }
     }//GEN-LAST:event_btn15ActionPerformed
 
@@ -1036,20 +1024,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn14.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("2percusion.wav");
+            URL soundURL = Consol.class.getResource("dj2.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin2.set(3, true);
-            System.out.println("Seleccionado" + sc.lin2.toString());
+            System.out.println("CHECK" + sc.lin2.toString());
             clip2.open(audioStream);
         }catch(Exception e){
 
         }
         clip2.start();
         clip2.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin2.set(3,false);
-            System.out.println("No selec" + sc.lin2.toString());
+            System.out.println("NO CHECK" + sc.lin2.toString());
         }
     }//GEN-LAST:event_btn14ActionPerformed
 
@@ -1057,20 +1044,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn13.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("1tarola.wav");
+            URL soundURL = Consol.class.getResource("dj1.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin1.set(3, true);
-            System.out.println("Seleccionado" + sc.lin1.toString());
+            System.out.println("CHECK" + sc.lin1.toString());
             clip1.open(audioStream);
         }catch(Exception e){
 
         }
         clip1.start();
         clip1.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin1.set(3,false);
-            System.out.println("No selec" + sc.lin1.toString());
+            System.out.println("NO CHECK" + sc.lin1.toString());
         }
     }//GEN-LAST:event_btn13ActionPerformed
 
@@ -1078,20 +1064,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn12.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("4hi_hat.wav");
+            URL soundURL = Consol.class.getResource("dj4.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin4.set(2, true);
-            System.out.println("Seleccionado" + sc.lin4.toString());
+            System.out.println("CHECK" + sc.lin4.toString());
             clip4.open(audioStream);
         }catch(Exception e){
 
         }
         clip4.start();
         clip4.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin4.set(2,false);
-            System.out.println("No selec" + sc.lin4.toString());
+            System.out.println("NO CHECK" + sc.lin4.toString());
         }
     }//GEN-LAST:event_btn12ActionPerformed
 
@@ -1099,20 +1084,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn11.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("3bombo.wav");
+            URL soundURL = Consol.class.getResource("dj3.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin3.set(2, true);
-            System.out.println("Seleccionado" + sc.lin3.toString());
+            System.out.println("CHECK" + sc.lin3.toString());
             clip3.open(audioStream);
         }catch(Exception e){
 
         }
         clip3.start();
         clip3.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin3.set(2,false);
-            System.out.println("No selec" + sc.lin3.toString());
+            System.out.println("NO CHECK" + sc.lin3.toString());
         }
     }//GEN-LAST:event_btn11ActionPerformed
 
@@ -1120,20 +1104,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn10.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("2percusion.wav");
+            URL soundURL = Consol.class.getResource("dj2.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin2.set(2, true);
-            System.out.println("Seleccionado" + sc.lin2.toString());
+            System.out.println("CHECK" + sc.lin2.toString());
             clip2.open(audioStream);
         }catch(Exception e){
 
         }
         clip2.start();
         clip2.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin2.set(2,false);
-            System.out.println("No selec" + sc.lin2.toString());
+            System.out.println("NO CHECK" + sc.lin2.toString());
         }
     }//GEN-LAST:event_btn10ActionPerformed
 
@@ -1141,20 +1124,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn9.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("1tarola.wav");
+            URL soundURL = Consol.class.getResource("dj1.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin1.set(2, true);
-            System.out.println("Seleccionado" + sc.lin1.toString());
+            System.out.println("CHECK" + sc.lin1.toString());
             clip1.open(audioStream);
         }catch(Exception e){
 
         }
         clip1.start();
         clip1.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin1.set(2,false);
-            System.out.println("No selec" + sc.lin1.toString());
+            System.out.println("NO CHECK" + sc.lin1.toString());
         }
     }//GEN-LAST:event_btn9ActionPerformed
 
@@ -1162,41 +1144,39 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn8.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("4hi_hat.wav");
+            URL soundURL = Consol.class.getResource("dj4.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin4.set(1, true);
-            System.out.println("Seleccionado" + sc.lin4.toString());
+            System.out.println("CHECK" + sc.lin4.toString());
             clip4.open(audioStream);
         }catch(Exception e){
 
         }
         clip4.start();
         clip4.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin4.set(1,false);
-            System.out.println("No selec" + sc.lin4.toString());
+            System.out.println("NO CHECK" + sc.lin4.toString());
         }
     }//GEN-LAST:event_btn8ActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
-        // TODO add your handling code here:
+
         if(btn7.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("3bombo.wav");
+            URL soundURL = Consol.class.getResource("dj3.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin3.set(1, true);
-            System.out.println("Seleccionado" + sc.lin3.toString());
+            System.out.println("CHECK" + sc.lin3.toString());
             clip3.open(audioStream);
         }catch(Exception e){
-
+¿
         }
         clip3.start();
         clip3.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin3.set(1,false);
-            System.out.println("No selec" + sc.lin3.toString());
+            System.out.println("NO CHECK" + sc.lin3.toString());
         }
     }//GEN-LAST:event_btn7ActionPerformed
 
@@ -1204,41 +1184,39 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn6.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("2percusion.wav");
+            URL soundURL = Consol.class.getResource("dj2.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin2.set(1, true);
-            System.out.println("Seleccionado" + sc.lin2.toString());
+            System.out.println("CHECK" + sc.lin2.toString());
             clip2.open(audioStream);
         }catch(Exception e){
 
         }
         clip2.start();
         clip2.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin2.set(1,false);
-            System.out.println("No selec" + sc.lin2.toString());
+ 
         }
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-        // TODO add your handling code here:
+
         if(btn5.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("1tarola.wav");
+            URL soundURL = Consol.class.getResource("dj1.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin1.set(1, true);
-            System.out.println("Seleccionado" + sc.lin1.toString());
+            System.out.println("CHECK" + sc.lin1.toString());
             clip1.open(audioStream);
         }catch(Exception e){
 
         }
         clip1.start();
         clip1.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin1.set(1,false);
-            System.out.println("No selec" + sc.lin1.toString());
+            System.out.println("NO CHECK" + sc.lin1.toString());
         }
     }//GEN-LAST:event_btn5ActionPerformed
 
@@ -1247,42 +1225,39 @@ public class Consol extends javax.swing.JFrame {
 
         if(btn4.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("4hi_hat.wav");
+            URL soundURL = Consol.class.getResource("dj4.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin4.set(0, true);
-            System.out.println("Seleccionado" + sc.lin4.toString());
+            System.out.println("CHECK" + sc.lin4.toString());
             clip4.open(audioStream);
         }catch(Exception e){
 
         }
         clip4.start();
         clip4.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin4.set(0,false);
-            System.out.println("No selec" + sc.lin4.toString());
+            System.out.println("NO CHECK" + sc.lin4.toString());
         }
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
-        // TODO add your handling code here:
-        //sc.lin3.set(0) = true;
+
         if(btn3.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("3bobmbo.wav");
+            URL soundURL = Consol.class.getResource("dj3.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin3.set(0, true);
-            System.out.println("Seleccionado" + sc.lin3.toString());
+            System.out.println("CHECK" + sc.lin3.toString());
             clip3.open(audioStream);
         }catch(Exception e){
-
+ 
         }
         clip3.start();
         clip3.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin3.set(0,false);
-            System.out.println("No selec" + sc.lin3.toString());
+            System.out.println("NO CHECK" + sc.lin3.toString());
         }
     }//GEN-LAST:event_btn3ActionPerformed
 
@@ -1290,20 +1265,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn2.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("2percusion.wav");
+            URL soundURL = Consol.class.getResource("dj2.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin2.set(0, true);
-            System.out.println("Seleccionado" + sc.lin1.toString());
+            System.out.println("CHECK" + sc.lin1.toString());
             clip2.open(audioStream);
         }catch(Exception e){
 
         }
         clip2.start();
         clip2.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin1.set(0,false);
-            System.out.println("No selec" + sc.lin1.toString());
+            System.out.println("NO CHECK" + sc.lin1.toString());
         }
     }//GEN-LAST:event_btn2ActionPerformed
 
@@ -1311,20 +1285,19 @@ public class Consol extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(btn1.isSelected()){
             try{
-            URL soundURL = Consol.class.getResource("1tarola.wav");
+            URL soundURL = Consol.class.getResource("dj1.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
             sc.lin1.set(0, true);
-            System.out.println("Seleccionado" + sc.lin1.toString());
+            System.out.println("CHECK" + sc.lin1.toString());
             clip1.open(audioStream);
         }catch(Exception e){
 
         }
         clip1.start();
         clip1.setFramePosition(0);
-        //Clip.LOOP_CONTINUOUSLY
         }else{
             sc.lin1.set(0,false);
-            System.out.println("No selec" + sc.lin1.toString());
+            System.out.println("NO CHECK" + sc.lin1.toString());
         }
 
     }//GEN-LAST:event_btn1ActionPerformed
@@ -1342,8 +1315,7 @@ public class Consol extends javax.swing.JFrame {
         }
         System.out.println(texto);
         try{
-            //Socket parar = new Socket("192.168.1.10",9998);
-            Socket paquete_enviar = new Socket("192.168.1.9",9999);
+            Socket paquete_enviar = new Socket("localhost",9999);
 
             
             //PrintStream salida = new PrintStream(parar.getOutputStream());
@@ -1355,28 +1327,14 @@ public class Consol extends javax.swing.JFrame {
 
             
         }catch(Exception e){
-            
+            System.out.println("Error: " + e.toString());    
         }
         
-        /*switch(texto){
-            case "loop":
-                try{
-                    URL soundURL = Consol.class.getResource("tarola.wav");
-                    AudioInputStream audioStream = AudioSystem.getAudioInputStream(soundURL);
-                    clip1.open(audioStream);
-                }catch(Exception e){
-
-                }
-                clip1.loop(Clip.LOOP_CONTINUOUSLY);
-                break;
-        }*//* El switch se sustituira por un arreglo que se enviará al socket y también se
-        enviará el texto, el clip.loop se implementará en el cpu2 */
 
     }//GEN-LAST:event_btnPlayActionPerformed
 
     private void btnStopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStopActionPerformed
         try {
-            // TODO add your handling code here:
             Socket paquete_enviar = new Socket("192.168.1.10",9998);
             ObjectOutputStream paquete_salida = new ObjectOutputStream(paquete_enviar.getOutputStream());
             paquete_salida.writeObject(new Detenerc());
